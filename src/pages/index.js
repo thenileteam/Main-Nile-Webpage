@@ -1,0 +1,5 @@
+ export { default as HomePage } from './HomePage'
+export { default as HomeNav } from './HomeNav'
+export { default as AboutUs } from './AboutUs'
+export { default as FeaturesPage } from './FeaturesPage'
+export { default as ContactPage } from './ContactPage'

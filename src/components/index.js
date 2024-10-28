@@ -1,0 +1,20 @@
+export { default as Navbar} from "./Navbar";
+export { default as Logo } from "./Logo";
+export { default as Hero} from "./Hero";
+export { default as Socials } from "./Socials";
+export { default as Features } from "./Features";
+export { default as Sliders } from "./Sliders";
+export { default as Action } from "./Action";
+export { default as Footer } from "./Footer";
+export { default as HeroAbout } from "./HeroAbout";
+export { default as SectionHeaders } from "./SectionHeaders";
+export { default as AboutJourney } from "./AboutJourney";
+export { default as ActionAbout } from "./ActionAbout";
+export { default as AboutTeam } from "./AboutTeam";
+export { default as FeaturesHero } from "./FeaturesHero";
+export { default as FeaturesSpecs } from "./FeaturesSpecs";
+export { default as FeaturesCarousel } from "./FeaturesCarousel";
+export { default as ContactWays } from "./ContactWays";
+export { default as AllSliderComponent } from "./AllSliderComponent";
+export { default as SocialIcons } from "./SocialIcons";
+
