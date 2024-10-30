@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import storeImg from '../../assets/store-2.svg'
-import storeImg1 from '../../assets/store-r.png'
+import storeImg from '../../assets/goblins.png';
+import storeImg1 from '../../assets/joes.png';
 const initialState = {
   sliderSettings: {
     dots: false,
@@ -10,7 +10,7 @@ const initialState = {
     slidesToScroll: 1,
     autoplay: true, 
   },
-  sliderImages:[storeImg, storeImg1],
+  sliderImages:[{id:0,url:'https://goblinandcoal.store/', image:storeImg}, {id:1, url:'https://joeparson.ng/',image:storeImg1}],
 };
 
 const sliderSlice = createSlice({

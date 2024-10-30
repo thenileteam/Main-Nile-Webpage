@@ -1,7 +1,7 @@
 import mainHero from '../assets/nileMain-hero.svg'
 const Hero = () => {
   return (
-    <section className="section-spacing bg-primary text-pry1">
+    <section className="section-spacing bg-gradient-to-r   from-primary to-lime-800 text-pry1">
       <div className="wrapper">
       <div className='hero text-center md:px-4'>
         <h1 className=' hero-headings'>Build and Scale Your Online Store With Nile</h1>

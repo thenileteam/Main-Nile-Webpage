@@ -66,7 +66,7 @@ const ContactPage = () => {
             </div>
             <button
               type="button"
-              className="mx-auto mt-14 block bg-slate-950 rounded-full font-semibold text-pry1 py-1 w-44 h-14 hover:bg-primary active:bg-primary transitions"
+              className="mx-auto mt-14 block bg-slate-950 rounded-full font-semibold text-pry1 py-1 w-44 h-12 hover:bg-primary active:bg-primary transitions"
             >
               {" "}
               Send Message

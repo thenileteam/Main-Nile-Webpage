@@ -18,4 +18,5 @@ export { default as ContactWays } from "./ContactWays";
 export { default as AllSliderComponent } from "./AllSliderComponent";
 export { default as SocialIcons } from "./SocialIcons";
 export { default as ScrollToTop } from "./ScrollToTop";
+export { default as ScrollRevealComponent} from "./Animation";
 
