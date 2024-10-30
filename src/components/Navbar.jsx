@@ -1,23 +1,24 @@
 import { useSelector, useDispatch } from "react-redux";
-import { openNavbar, closeNavbar, updateCurrentElement } from "../features/modal/modalSlice";
+import {
+  openNavbar,
+  closeNavbar,
+  updateCurrentElement,
+} from "../features/modal/modalSlice";
 import menu from "../assets/menu-03.svg";
 import nileLogoGreen from "../assets/nile-green.svg";
 import closeBtn from "../assets/close.svg";
 import { navLinkItems } from "../utils";
 import { NavLink } from "react-router-dom";
-import {SocialIcons} from '../components'
+import { SocialIcons } from "../components";
 const Navbar = () => {
-  const { isOpen, currentElement, } = useSelector((store) => store.modal);
+  const { isOpen, currentElement } = useSelector((store) => store.modal);
   const dispatch = useDispatch();
-  const activePage = (id)=>{
+  const activePage = (id) => {
     console.log(id);
-    if (id !== 0) {
-      dispatch(updateCurrentElement(id));
-    } else {
-      dispatch(updateCurrentElement(null))
-    }
-  
-  }
+    id !== 0
+      ? dispatch(updateCurrentElement(id))
+      : dispatch(updateCurrentElement(null));
+  };
   return (
     <header
       className={`${
@@ -27,33 +28,50 @@ const Navbar = () => {
       }`}
     >
       <div className="text-primary">
-        <div className="flex justify-between lg:gap-24 items-center py-3.5">
+        <div className="flex justify-between lg:gap-24 items-center py-3">
           <NavLink to="/" id="home">
             <img src={nileLogoGreen} alt="nile-logo" className="logo-width" />
           </NavLink>
-
           {/* Hamburger menu for mobile */}
           <button
             className="text-primary text-3xl lg:hidden"
             onClick={() => dispatch(openNavbar())}
           >
-            <img src={menu} className={`${isOpen ? "hidden" : "block"}`} alt='hamburger-menu' loading="lazy"/>
+            <img
+              src={menu}
+              className={`${isOpen ? "hidden" : "block"}`}
+              alt="hamburger-menu"
+              loading="lazy"
+            />
           </button>
           {/* Navbar Links */}
           <nav className="lg:flex hidden grow">
-            <div className=" p-7 lg:p-0 lg:flex">
-              <ul className="lg:flex-container gap-x-16">
+            <div className="py-7 lg:p-0 lg:flex">
+              <ul className="lg:flex-container lg:gap-x-4 xl:gap-x-16">
                 {navLinkItems.map((item) => {
                   const { id, url, text, icon } = item;
-                  const isActive= currentElement ===id
+                  const isActive = currentElement === id;
                   return (
                     <div
                       key={id}
                       className="relative rounded-lg mt-7 lg:m-0 p-3 lg:p-0 border-2 lg:border-0 flex items-center gap-3 border-myCustomColor-light"
                     >
-                      <img src={icon} alt={text} loading='lazy' className="w-8 lg:hidden" />
-                      <li className={isActive?'navLink font-semibold p-1 bg-primary text-pry1 transitions rounded-md':"navLink font-semibold p-1 text-pry3 hover:bg-primary hover:text-pry2 transitions rounded-md"}>
-                        <NavLink to={url} onClick={()=>activePage(id)}>{ text}</NavLink>
+                      <img
+                        src={icon}
+                        alt={text}
+                        loading="lazy"
+                        className="w-8 lg:hidden"
+                      />
+                      <li
+                        className={
+                          isActive
+                            ? "navLink font-semibold p-1 bg-primary text-pry1 transitions rounded-md"
+                            : "navLink font-semibold p-1 text-pry3 hover:bg-primary hover:text-pry2 transitions rounded-md"
+                        }
+                      >
+                        <NavLink to={url} onClick={() => activePage(id)}>
+                          {text}
+                        </NavLink>
                       </li>
                     </div>
                   );
@@ -61,10 +79,9 @@ const Navbar = () => {
               </ul>
             </div>
           </nav>
-
           <button
             type="button"
-            className="hidden p-1 rounded-full bg-primary text-pry1 font-bold transitions hover:bg-slate-950 btn-join-waitList lg:block lg:w-44 lg:h-14"
+            className="hidden p-2 rounded-full bg-primary text-pry1 font-bold transitions hover:bg-slate-950 btn-join-waitList lg:block lg:w-48 lg:h-14"
           >
             <a href="#" target="_blank" rel="noopener noreferrer">
               Login/SignUp
@@ -105,7 +122,7 @@ const Navbar = () => {
                 );
               })}
               <div className="fixed bottom-1 text-primary">
-                <SocialIcons color='#004324'/>
+                <SocialIcons color="#004324" />
               </div>
             </nav>
           </div>

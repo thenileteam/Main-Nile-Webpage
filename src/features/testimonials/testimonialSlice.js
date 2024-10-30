@@ -6,15 +6,24 @@ const initialState = {
     infinite: true,
     speed: 1000,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     autoplay: true,
+    adaptiveHeight: true,
     responsive: [
       {
-        breakpoint: 768, // For mobile devices (width <= 768px)
+        breakpoint: 700, // For mobile devices (width < 768px)
         settings: {
           slidesToShow: 1,
           dots: true,
-          autoplay: false,
+          slidesToScroll:1,
+        },
+      },
+      {
+        breakpoint: 1024, // For mobile devices (width < 912px)
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll:2,
+          dots: true,
         },
       },
     ],

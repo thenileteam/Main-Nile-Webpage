@@ -8,13 +8,13 @@ const AllSliderComponent = () => {
   console.log(slides);
 
   return (
-    <div className="my-16">
+    <section className="my-8 md:my-16 ">
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <img src={slide.image} alt={`logo-${index + 1}`} className="w-[182px] h-[22px] object-contain block" key={slide.id} />
         ))}
       </Slider>
-    </div>
+    </section>
   );
 };
 

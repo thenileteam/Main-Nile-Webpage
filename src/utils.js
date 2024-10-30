@@ -23,6 +23,10 @@ import inventory from './assets/inventory.svg'
 
 import emailArrow from './assets/email-arrow-left.svg'
 import phone from './assets/phone-forward.svg'
+import hrImg from'./assets/Hr.svg'
+import aliImg from'./assets/Ali.jpeg'
+import rachaelImg from './assets/rachael.svg'
+import stephenImg from './assets/stephen.jpg'
 
 export const navLinkItems = [
   { id: 0, text: "Home", url: "/", icon: home },
@@ -142,12 +146,12 @@ export const journey = [
 
 export const teams= [
   {id:0, name:'Winner Oyebanjo', position:'CEO', img:imageItem1},
-  {id:1, name:'Winner Oyebanjo', position:'CEO', img:imageItem1},
-  { id: 2, name: 'Winner Oyebanjo', position: 'CEO', img: imageItem1 },
-  {id:3, name:'Winner Oyebanjo', position:'CEO', img:imageItem1},
-  {id:4, name:'Winner Oyebanjo', position:'CEO', img:imageItem1},
-  {id:5, name:'Winner Oyebanjo', position:'CEO', img:imageItem1},
-  {id:6, name:'Winner Oyebanjo', position:'CEO', img:imageItem1},
+  {id:1, name:'Esther Ayodeji', position:'People Operations', img:hrImg},
+  { id: 2, name: 'Agu Rachael', position: 'Product Officer', img:  rachaelImg},
+  {id:3, name:'Ali Mohammed', position:'Frontend Developer', img:aliImg},
+  {id:4, name:'Adegoke Stephen', position:'Backend Developer', img:imageItem1},
+  {id:5, name:'Sulaimon Aminat', position:'Frontend Developer', img:imageItem1},
+  {id:6, name:'Hashim Amuda', position:'Product Designer', img:imageItem1},
   {id:7, name:'Winner Oyebanjo', position:'CEO', img:imageItem1},
 
 ]
@@ -162,6 +166,6 @@ export const featuresSpecs = [
 
 
 export const contacts = [
-  {id:0, name:'Email', contact:'support@getNileco', icon:emailArrow},
+  {id:0, name:'Email', contact:'support@Nile.co', icon:emailArrow},
   {id:1, name:'Phone', contact:'+234 809 798 555', icon:phone}
 ]

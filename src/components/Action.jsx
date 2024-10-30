@@ -1,13 +1,31 @@
-
+import { Link } from "react-router-dom";
 const Action = () => {
-    return (
-          <div className="text-center py-8 px-4 bg-myCustomColor-lighterGreen rounded-xl lg:w-5/6 shadow-md lg:shadow shadow-myCustomColor-light mx-auto mt-[26px] xl:max-w-7xl">
-              <h2 className="section-headers pb-7">Ready To Start Your E-commerce Journey?</h2>
-              <button type="button" className="action-buttons  bg-slate-950 hover:bg-primary active:bg-primary transitions">Get Started</button>
-              <button type="button" className="action-buttons mt-4 lg:ml-7 bg-myCustomColor-light transitions hover:bg-primary">Contact Us</button>
+  return (
+    <section className="px-4">
+    <div className="wrapper py-8 lg:py-16 lg:px-[120px] bg-myCustomColor-lighterGreen rounded-3xl shadow-md shadow-myCustomColor-light  ">
+      <div className="text-center mx-auto">
+        <h2 className="section-headers">
+          Ready To Start Your E-commerce Journey?
+        </h2>
+        <div className="md:max-w-[433px] mx-auto flex flex-col md:flex-row gap-4 md:gap-8 mt-6 md:mt-12  ">
+          <button
+            type="button"
+            className="action-buttons bg-slate-950 hover:bg-primary active:bg-primary transitions"
+          >
+            Get Started
+          </button>
+          <button
+            type="button"
+            className="action-buttons bg-myCustomColor-light transitions hover:bg-primary"
+          >
+            <Link to="/ContactPage">Contact Us</Link>
+          </button>
         </div>
-      )
-            
-}
+      </div>
+    </div>
 
-export default Action
+    </section>
+  );
+};
+
+export default Action;

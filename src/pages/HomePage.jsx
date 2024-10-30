@@ -5,7 +5,7 @@ const HomePage = () => {
       <Hero/>
       <Features />
       <Sliders/>
-      {/* <Action /> */}
+      <Action />
       <AllSliderComponent/>
       <Footer />
     </>

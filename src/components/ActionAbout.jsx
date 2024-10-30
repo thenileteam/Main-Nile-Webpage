@@ -1,13 +1,21 @@
-
-const ActionAbout = ({title, btnText}) => {
+const ActionAbout = ({ title,paragraph, btnText }) => {
   return (
-    <section className="section-spacing">
-    <div className="text-center py-8 px-4 bg-myCustomColor-lighterGreen rounded-xl shadow-md lg:shadow-lg shadow-myCustomColor-light lg:w-5/6 mx-auto my-8 xl:max-w-7xl">
-        <h2 className="section-headers pb-7"> { title}</h2>
-        <button type="button" className="action-buttons  bg-slate-950 hover:bg-primary active:bg-primary transitions"> { btnText}</button>
-  </div>
-</section>
-  )
-}
+    <section className="">
+      <div className="wrapper px-4 py-8 lg:py-16 lg:px-[100px] bg-myCustomColor-lighterGreen rounded-3xl shadow-md  shadow-myCustomColor-light">
+        <div className="text-center mx-auto">
+          <h2 className="section-headers"> {title}</h2>
+          <p className="py-1 md:py-2 md:text-[24px]">{paragraph }</p>
+          <button
+            type="button"
+            className="action-buttons mt-6 md:mt-9 bg-slate-950 hover:bg-primary active:bg-primary transitions"
+          >
+            {" "}
+            {btnText} &#8594;
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default ActionAbout
+export default ActionAbout;

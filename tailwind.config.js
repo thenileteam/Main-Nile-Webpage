@@ -23,7 +23,6 @@ export default {
         width: {
           'inputW': '300px',
           '30': '100px',
-          '65': '300px',
           '75':'514px',
         },
         

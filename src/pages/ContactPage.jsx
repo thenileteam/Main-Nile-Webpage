@@ -8,7 +8,7 @@ const ContactPage = () => {
           <h1 className="section-headers text-center">
             Contact Our Friendly Team
           </h1>
-          <strong className="block lg:text-[28px] py-3 text-pry3 text-center">
+          <strong className="block lg:text-[20px] py-3 text-pry3 text-center">
             We’re here to Assist With Any Questions, Partnerships Or Support.
           </strong>
           <form action="">
@@ -72,11 +72,11 @@ const ContactPage = () => {
               Send Message
             </button>
           </form>
-          <div className="my-16">
-            <h3 className="section-headers text-center">
+          <div className="">
+            <h3 className="section-headers mt-16 text-center">
               Other Ways to Contact us
             </h3>
-            <article className="mt-14 flex flex-col lg:flex-row gap-4 lg:gap-32 text-center ">
+            <article className="mt-12 flex flex-col lg:flex-row gap-4 lg:gap-32 text-center ">
               {contacts.map((item) => (
                 <ContactWays key={item.id} {...item} />
               ))}

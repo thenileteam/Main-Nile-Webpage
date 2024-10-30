@@ -3,17 +3,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { testimonies } from "../utils";
 import { useSelector } from "react-redux";
-import{Action} from '../components'
 const Sliders = () => {
   const { sliderSettings } = useSelector((store) => store.testimonials);
   return (
-    <section className="section-spacing
+    <section className="py-8 lg:py-16
     ">
-      <h2 className="section-headers text-center">Success Stories From African Entrepreneurs</h2>
-      <div className='mt-14 xl:max-w-7xl mx-auto' >
-        <Slider {...sliderSettings}   >
+      {/* <div className=" "> */}
+      <h2 className="section-headers text-center max-w-[731px] mx-auto">Success Stories From African Entrepreneurs</h2>
+      <div className='mt-14 testimonials' >
+        <Slider {...sliderSettings}  >
           {testimonies.map((item, index) => (
-            <div  id='slider-spacing' className="bg-myCustomColor-lighterGreen rounded-md p-4 border-2 border-green-500" key={item.id}>
+            <div className="bg-myCustomColor-lighterGreen rounded-md p-4 shadow-sm shadow-myCustomColor-light " key={item.id}>
               <div className="flex gap-2 items-center">
                 <img
                   src={item.image}
@@ -28,7 +28,8 @@ const Sliders = () => {
           ))}
         </Slider>
       </div>
-     <Action/>
+
+      {/* </div> */}
     </section>
   );
 };

@@ -12,15 +12,13 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  overflow-x: hidden;
   font-family: "Agrandir", sans-serif;
+  overflow-x: hidden;
 }
 .border-inspecting {
   border: 2px solid red;
 }
-#slider-spacing {
-  margin-left: 20px !important;
-}
+ 
 @font-face {
   font-family: "Agrandir GrandHeavy";
   src: url("/font/Agrandir-GrandHeavy.otf") format("opentype");
@@ -29,7 +27,7 @@ body {
   font-display: swap;
 }
 @font-face {
-  font-family: "Agrandir Regular ";
+  font-family: "Agrandir Regular";
   src:  url("/font/Agrandir-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
@@ -46,12 +44,20 @@ h1{
    font-family: "Agrandir GrandHeavy", sans-serif;
 }
 .section-headers{
-  font-family:  "Agrandir TextBold", sans-serif;
+  font-family:  "Agrandir TextBold", sans-serif!important;
 }
 p,strong{
-  font-family:"Agrandir Regular", sans-serif;
+  font-family:"Agrandir Regular", sans-serif !important;
 }
-.hero p, .hero strong{
+h4,h2, li,h5, button{
+  font-family:"Agrandir TextBold", sans-serif !important;
+
+}
+.testimonials .slick-slide{
+  margin-right: 28px !important;
+  height: inherit;
+}
+ .hero >strong{
   font-weight: 700;
 }
 @layer components {
@@ -61,21 +67,32 @@ p,strong{
   .logo-width {
     @apply w-20 lg:w-28;
   }
+  .hero-subheading{
+    @apply py-[2px] md:text-2xl md:py-1
+  }
+  .hero-headings{
+    @apply text-[30px] lg:text-6xl font-bold
+  }
   .section-headers {
-    @apply text-primary font-bold text-3xl lg:text-5xl;
+    @apply text-primary font-bold text-[28px] lg:text-5xl;
   }
-  /* lg:pt-[52px] */
   .section-spacing {
-    @apply px-[11px] py-8 lg:px-32 lg:py-16;
+    @apply px-6 py-8 lg:py-16;
   }
+   .wrapper{
+    @apply md:w-4/5 md:max-w-[1,184px] mx-auto
+   }
   .flex-container {
     @apply lg:flex justify-between;
+  }
+  .grid-container{
+    @apply grid md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 mt-6 md:mt-12
   }
   .transitions {
     @apply transition-all delay-100 duration-200 ease-in;
   }
   .action-buttons {
-    @apply block lg:inline-block rounded-full font-semibold text-pry1 px-1 mx-auto w-[184px] h-[60px];
+    @apply mx-auto rounded-full font-semibold text-pry1 px-1 w-[184px] h-[50px];
   }
   .labels {
     @apply block font-bold mb-4 mt-8;
@@ -84,4 +101,5 @@ p,strong{
     @apply bg-pry1 outline-none rounded-sm focus:outline focus:outline-1 focus:outline-pry3
     p-3 w-full shadow-md shadow-myCustomColor-lighterGreen;
   }
+ 
 }

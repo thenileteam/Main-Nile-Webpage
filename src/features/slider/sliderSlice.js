@@ -9,7 +9,6 @@ const initialState = {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true, 
-    centerMode: true,
   },
   sliderImages:[storeImg, storeImg1],
 };
