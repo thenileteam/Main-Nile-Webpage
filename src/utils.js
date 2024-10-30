@@ -6,8 +6,8 @@ import payment from "./assets/payment-icon.svg";
 import storeIcon from "./assets/setup-icon.svg";
 import scalability from "./assets/Scalability-icon.svg";
 import railroad from "./assets/railroad-light.svg";
-import face1 from './assets/face-1.svg'
-import face2 from './assets/face2.svg'
+import face1 from './assets/chicky-fits.jpeg'
+import face2 from './assets/beads.jpeg'
 import face3 from './assets/face3.svg'
 import face4 from './assets/face4.svg'
 import journey1 from './assets/journey-1.svg'
@@ -23,10 +23,12 @@ import inventory from './assets/inventory.svg'
 
 import emailArrow from './assets/email-arrow-left.svg'
 import phone from './assets/phone-forward.svg'
-import hrImg from'./assets/Hr.svg'
 import aliImg from'./assets/Ali.jpeg'
-import rachaelImg from './assets/rachael.svg'
+import rachaelImg from './assets/rachel.jpg'
 import stephenImg from './assets/stephen.jpg'
+import hashimImg from './assets/hashim.jpeg'
+import aminatImg from './assets/aminat.jpeg'
+// import hrImg from'./assets/Hr.svg'
 
 export const navLinkItems = [
   { id: 0, text: "Home", url: "/", icon: home },
@@ -146,13 +148,13 @@ export const journey = [
 
 export const teams= [
   {id:0, name:'Winner Oyebanjo', position:'CEO', img:imageItem1},
-  {id:1, name:'Esther Ayodeji', position:'People Operations', img:hrImg},
+  // {id:1, name:'Esther Ayodeji', position:'People Operations', img:hrImg},
   { id: 2, name: 'Agu Rachael', position: 'Product Officer', img:  rachaelImg},
   {id:3, name:'Ali Mohammed', position:'Frontend Developer', img:aliImg},
-  {id:4, name:'Adegoke Stephen', position:'Backend Developer', img:imageItem1},
-  {id:5, name:'Sulaimon Aminat', position:'Frontend Developer', img:imageItem1},
-  {id:6, name:'Hashim Amuda', position:'Product Designer', img:imageItem1},
-  {id:7, name:'Winner Oyebanjo', position:'CEO', img:imageItem1},
+  {id:4, name:'Adegoke Stephen', position:'Backend Developer', img:stephenImg},
+  {id:5, name:'Sulaimon Aminat', position:'Frontend Developer', img:aminatImg},
+  {id:6, name:'Hashim Amuda', position:'Product Designer', img:hashimImg},
+  // {id:7, name:'Winner Oyebanjo', position:'CEO', img:imageItem1},
 
 ]
 
@@ -166,6 +168,6 @@ export const featuresSpecs = [
 
 
 export const contacts = [
-  {id:0, name:'Email', contact:'support@Nile.co', icon:emailArrow},
-  {id:1, name:'Phone', contact:'+234 809 798 555', icon:phone}
+  {id:0, name:'Email', contact:'support@getNile.co', icon:emailArrow},
+  {id:1, name:'Phone', contact:'+234 812 3843 076', icon:phone}
 ]

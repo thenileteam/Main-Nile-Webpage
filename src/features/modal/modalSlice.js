@@ -16,9 +16,12 @@ const modalSlice = createSlice({
     updateCurrentElement: (state, action) => {
       state.currentElement = action.payload;
     },
+    setActivePage: (state, action) => {
+      state.currentElement = action.payload !== 0 ? action.payload : null;
+    },
   },
 });
 
-export const { openNavbar, closeNavbar, updateCurrentElement, setIsActive } =
+export const { openNavbar, closeNavbar, updateCurrentElement, setActivePage } =
   modalSlice.actions;
 export default modalSlice.reducer;

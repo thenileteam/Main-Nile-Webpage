@@ -9,6 +9,7 @@ const AllSliderComponent = () => {
 
   return (
     <section className="my-8 md:my-16 ">
+       <h2 className="font-bold text-center mb-10 text-pry-3">Companies That Trusts Us</h2>
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <img src={slide.image} alt={`logo-${index + 1}`} className="w-[182px] h-[22px] object-contain block" key={slide.id} />

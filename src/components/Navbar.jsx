@@ -10,14 +10,13 @@ import closeBtn from "../assets/close.svg";
 import { navLinkItems } from "../utils";
 import { NavLink } from "react-router-dom";
 import { SocialIcons } from "../components";
+import { setActivePage } from "../features/modal/modalSlice";
 const Navbar = () => {
   const { isOpen, currentElement } = useSelector((store) => store.modal);
   const dispatch = useDispatch();
   const activePage = (id) => {
-    console.log(id);
-    id !== 0
-      ? dispatch(updateCurrentElement(id))
-      : dispatch(updateCurrentElement(null));
+    dispatch(setActivePage(id))
+ 
   };
   return (
     <header
@@ -81,7 +80,7 @@ const Navbar = () => {
           </nav>
           <button
             type="button"
-            className="hidden p-2 rounded-full bg-primary text-pry1 font-bold transitions hover:bg-slate-950 btn-join-waitList lg:block lg:w-48 lg:h-14"
+            className="hidden p-2 rounded-full bg-primary text-pry1 font-bold transitions hover:bg-slate-950 btn-join-waitList lg:block lg:w-40 lg:h-12"
           >
             <a href="#" target="_blank" rel="noopener noreferrer">
               Login/SignUp

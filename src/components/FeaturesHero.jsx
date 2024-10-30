@@ -21,9 +21,8 @@ const FeaturesHero = () => {
         }
     },[dispatch])
   return (
-      <section className='section-spacing bg-primary text-pry1'>
+      <section className='section-spacing bg-gradient-to-r   from-primary to-lime-800 text-pry1'>
           <div className="wrapper">
-              {/*lg:w-3/5  */}
           <div className='mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-6'>
               <div className='hero text-center md:text-left '>
                   <h1 className=' hero-headings'>A Platform Built For African Entrepreneurs</h1>
