@@ -37,7 +37,6 @@ const Sliders = () => {
             ))}
           </Slider>
         </div>
-
         {/* </div> */}
       </section>
     </ScrollRevealComponent>

@@ -55,7 +55,8 @@ h4,h2, li,h5, button{
 }
 .testimonials .slick-slide{
   margin-right: 28px !important;
-  height: inherit;
+  height: inherit !important;
+  
 }
  .hero >strong{
   font-weight: 700;

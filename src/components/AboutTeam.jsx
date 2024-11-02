@@ -12,7 +12,7 @@ const AboutTeam = () => {
               const { id, img, name, position } = team;
               return (
                 <div
-                  className="relative w-60 md:w-auto mx-auto transitions hover:scale-110"
+                  className="relative w-60 h-80 md:h-auto md:w-auto mx-auto transitions hover:scale-110"
                   key={id}
                 >
                   <img
