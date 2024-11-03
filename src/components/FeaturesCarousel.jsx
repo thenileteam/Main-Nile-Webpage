@@ -2,21 +2,23 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useSelector } from "react-redux";
+import{ScrollRevealComponent} from '../components'
 const FeaturesCarousel = () => {
   const { sliderImages, sliderSettings } = useSelector(
     (store) => store.slider
   );
   return (
+    <ScrollRevealComponent>
     <section id='sliders' className="py-16 bg-pry1">
       <h2 className="section-headers text-center">See Nile In Action</h2>
         <div className="bg-myCustomColor-light mx-auto mt-6 md:mt-14 py-5 px-5">
           <Slider {...sliderSettings}>
-            {sliderImages.map((image, index) => (
-              <div key={index}>
-                <a href="#">
+            {sliderImages.map(({url,image, id}) => (
+              <div key={id}>
+                <a href={url}target="_blank" rel="noopener noreferrer">
                   <img
                     src={image}
-                    alt={`Slide ${index + 1}`}
+                    alt={`Slide ${id + 1}`}
                     className="w-full"
                   />
                 </a>
@@ -25,6 +27,8 @@ const FeaturesCarousel = () => {
           </Slider>
         </div>
     </section>
+
+    </ScrollRevealComponent>
   );
 };
 
