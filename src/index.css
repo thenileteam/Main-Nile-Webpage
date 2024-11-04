@@ -12,8 +12,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  overflow-x: hidden!important;
   font-family: "Agrandir", sans-serif;
-  overflow-x: hidden;
 }
 .border-inspecting {
   border: 2px solid red;
@@ -53,11 +53,12 @@ h4,h2, li,h5, button{
   font-family:"Agrandir TextBold", sans-serif !important;
 
 }
-.testimonials .slick-slide{
-  margin-right: 28px !important;
-  height: inherit !important;
+.testimonials .slick-slide, #features .slick-slide{
+  margin-right: 28px;
+  height: inherit ;
   
 }
+ 
  .hero >strong{
   font-weight: 700;
 }

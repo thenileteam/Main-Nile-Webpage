@@ -3,7 +3,7 @@ import { ScrollRevealComponent } from "../components";
 const Action = () => {
   return (
     <ScrollRevealComponent>
-      <section className="section-spacing bg-myCustomColor-lighterGreen rounded-3xl shadow-md  shadow-myCustomColor-light max-w-[1184px] w-4/5 mx-auto">
+      <section className="section-spacing bg-myCustomColor-lighterGreen rounded-3xl shadow-md  shadow-myCustomColor-light w-11/12 md:max-w-[1184px] md:w-4/5 mx-auto">
         <div className="wrapper">
           <div className="text-center mx-auto">
             <h2 className="section-headers">

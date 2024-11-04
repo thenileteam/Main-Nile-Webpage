@@ -13,7 +13,7 @@ const Footer = () => {
                 <Logo />
               </Link>
               <div className="text-myCustomColor-light">
-                <p>suport@getNile.co</p>
+                <p>suport@getnile.co</p>
                 <p className="font-bold mt-4">+234 812 3843 076</p>
               </div>
               <form>

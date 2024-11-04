@@ -1,27 +1,12 @@
 import { useSelector, useDispatch } from 'react-redux'
 import featureHeroImg from '../assets/featureHero.svg'
 import featureHeroImg2 from '../assets/featuresHeroMobile.svg'
-import { useEffect } from 'react'
-import{ setWindowWidth} from '../features/windowSlicer/windowSlice'
-
+ import {useWindowWidth} from '../components'
 const FeaturesHero = () => {
-    const dispatch = useDispatch()
-    const { windowWidth } = useSelector(store => store.windowSlice)
-
-    useEffect(() => {
-        const handleResize = () => {
-            dispatch(setWindowWidth(window.innerWidth))
-        }
-        handleResize();
-
-        window.addEventListener('resize', handleResize);
+    const windowWidth = useWindowWidth();
     
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        }
-    },[dispatch])
   return (
-      <section className='section-spacing bg-gradient-to-r   from-primary to-lime-800 text-pry1'>
+      <section className='section-spacing bg-gradient-to-r from-primary to-lime-800 text-pry1'>
           <div className="wrapper">
           <div className='mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-6'>
               <div className='hero text-center md:text-left '>

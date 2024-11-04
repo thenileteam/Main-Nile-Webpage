@@ -3,7 +3,7 @@ import {ScrollRevealComponent } from "../components";
 const ActionAbout = ({ title, paragraph, btnText }) => {
   return (
     <ScrollRevealComponent>
-      <section className="section-spacing bg-myCustomColor-lighterGreen rounded-3xl shadow-md  shadow-myCustomColor-light max-w-[1184px] w-4/5 mx-auto">
+      <section className="section-spacing bg-myCustomColor-lighterGreen rounded-3xl shadow-md  shadow-myCustomColor-light w-11/12 md:w-4/5 md:max-w-[1184px]  mx-auto">
         <div className="wrapper">
           <div className="text-center mx-auto">
             <h2 className="section-headers"> {title}</h2>

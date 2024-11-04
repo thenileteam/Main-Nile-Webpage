@@ -25,16 +25,13 @@ import emailArrow from './assets/email-arrow-left.svg'
 import phone from './assets/phone-forward.svg'
 import aliImg from'./assets/Ali.jpeg'
 import rachaelImg from './assets/rachel.jpg'
-import stephenImg from './assets/stephen.jpg'
-import hashimImg from './assets/hashim.jpeg'
-import aminatImg from './assets/aminat.jpeg'
-// import hrImg from'./assets/Hr.svg'
-
+ 
+// icon: home icon: aboutIcon icon: featuresIcon  icon: phoneIcon
 export const navLinkItems = [
-  { id: 0, text: "Home", url: "/", icon: home },
-  { id: 1, text: "About us", url: "/AboutUs", icon: aboutIcon },
-  { id: 2, text: "Features", url: "/FeaturesPage", icon: featuresIcon },
-  { id: 3, text: "Contact us", url: "/ContactPage", icon: phoneIcon },
+  { id: 0, text: "Home", url: "/", },
+  { id: 1, text: "About us", url: "/AboutUs",   },
+  { id: 2, text: "Features", url: "/FeaturesPage",  },
+  { id: 3, text: "Contact us", url: "/ContactPage",  },
 ];
 
 export const footerLinks = [
@@ -68,7 +65,7 @@ export const features = [
     id: 1,
     img: railroad,
     text: " Analyze sales, track performance and optimize with ai insights.",
-    heading: "AI Analytics",
+    heading: "Analytics",
   },
   {
     id: 2,
@@ -151,23 +148,22 @@ export const teams= [
   // {id:1, name:'Esther Ayodeji', position:'People Operations', img:hrImg},
   { id: 2, name: 'Agu Rachael', position: 'Product Officer', img:  rachaelImg},
   {id:3, name:'Ali Mohammed', position:'Frontend Developer', img:aliImg},
-  {id:4, name:'Adegoke Stephen', position:'Backend Developer', img:stephenImg},
-  {id:5, name:'Sulaimon Aminat', position:'Frontend Developer', img:aminatImg},
-  {id:6, name:'Hashim Amuda', position:'Product Designer', img:hashimImg},
-  // {id:7, name:'Winner Oyebanjo', position:'CEO', img:imageItem1},
+  // {id:4, name:'Adegoke Stephen', position:'Backend Developer', img:stephenImg},
+  // {id:5, name:'Sulaimon Aminat', position:'Frontend Developer', img:aminatImg},
+  // {id:6, name:'Hashim Amuda', position:'Product Designer', img:hashimImg},
 
 ]
 
 export const featuresSpecs = [
-  { id: 0, title:'1- Store Customization', paragraph:'Choose from a variety of modern, mobile-friendly themes to suit your brands', img:customizeStore},
-  { id: 1, title:'2- AI Analytics', paragraph:'Track your store’s performance with Ai powered analytics and sales insights.', img:analytics},
-  { id: 2, title:'3- Payment Gateway Integration', paragraph:'We support multiple payment gateways to ensure secure transactions.', img:payStack},
-  { id: 3, title:'4- Inventory Management', paragraph:'Manage your inventory with ease, track stock levels, and set up alert for low stock.', img:inventory},
+  { id: 0, title:'1- Online Store in 60 Seconds!  ', paragraph:'Nile makes creating a professional storefront with a unique domain easy, with no technical skills required in 60 Seconds. ', img:customizeStore},
+  { id: 1, title:'2- Analytics', paragraph:'Track your store’s performance with Ai powered analytics and sales insights.', img:analytics},
+  { id: 2, title:'3- International payment processing and fulfillment', paragraph:'We integrate with banks so you can get your invoice paid ', img:payStack},
+  { id: 3, title:'4- Inventory and Order Management ', paragraph:'Nile provides simple tools to manage products and track inventory in real-time, reducing errors and improving efficiency. ', img:inventory},
   
 ]
 
 
 export const contacts = [
-  {id:0, name:'Email', contact:'support@getNile.co', icon:emailArrow},
+  {id:0, name:'Email', contact:'support@getnile.co', icon:emailArrow},
   {id:1, name:'Phone', contact:'+234 812 3843 076', icon:phone}
 ]
