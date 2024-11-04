@@ -11,7 +11,7 @@ const initialState = {
     adaptiveHeight: true,
     responsive: [
       {
-        breakpoint: 700, // For mobile devices (width < 768px)
+        breakpoint: 700, // For mobile devices (width <= 700px)
         settings: {
           slidesToShow: 1,
           dots: true,
@@ -19,7 +19,7 @@ const initialState = {
         },
       },
       {
-        breakpoint: 1024, // For mobile devices (width < 912px)
+        breakpoint: 1024, // For mobile devices (width <= 1024px)
         settings: {
           slidesToShow: 2,
           slidesToScroll:2,
