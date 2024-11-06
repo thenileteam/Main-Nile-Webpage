@@ -77,8 +77,8 @@ const Navbar = () => {
             type="button"
             className="hidden p-2 rounded-full bg-primary text-pry1 font-bold transitions hover:bg-slate-950 btn-join-waitList lg:block lg:w-40 lg:h-12"
           >
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              Login/SignUp
+            <a href="https://forms.gle/d3z9vrrX8RiGg2gh9" target="_blank" rel="noopener noreferrer">
+              Join Waitlist
             </a>
           </button>
 
