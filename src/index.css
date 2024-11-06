@@ -15,9 +15,9 @@ body {
   overflow-x: hidden!important;
   font-family: "Agrandir", sans-serif;
 }
-.border-inspecting {
+/* .border-inspecting {
   border: 2px solid red;
-}
+} */
  
 @font-face {
   font-family: "Agrandir GrandHeavy";
@@ -81,7 +81,7 @@ h4,h2, li,h5, button{
     @apply px-6 py-8 lg:py-16;
   }
    .wrapper{
-    @apply md:w-4/5 md:max-w-[1,184px] mx-auto
+    @apply md:w-4/5 md:max-w-[1184px] mx-auto
    }
   .flex-container {
     @apply lg:flex justify-between;
