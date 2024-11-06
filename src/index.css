@@ -60,9 +60,7 @@ h4,h2, li,h5, button{
  .hero >strong{
   font-weight: 700;
 }
-/* #features .slick-slide{
-} */
-
+ 
 @layer components {
   .footer-headings {
     @apply text-primary font-bold;

@@ -14,7 +14,6 @@ const ScrollRevealComponent = ({ children }) => {
       reset: true,
     });
 
-    // Reveal elements in the component
     sr.reveal(ref.current, {
       translateY: "100px",
       opacity: 1,
