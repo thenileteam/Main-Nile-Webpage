@@ -4,7 +4,7 @@ const initialState = {
   sliderSettings: {
     dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 2000,
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,
