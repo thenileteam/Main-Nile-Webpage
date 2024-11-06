@@ -1,6 +1,12 @@
  YML
 ---
 deployment:
+method: node
+  node_version: "14"
+  commands:
+    - npm install
+    - npm run build
+    - cp -r dist/* public_html/
   tasks:
     - export DEPLOYPATH=/home/your-username/public_html/
     - /bin/cp -R .vscode $DEPLOYPATH
