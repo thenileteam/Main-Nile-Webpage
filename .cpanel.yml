@@ -8,7 +8,7 @@ method: node
     - npm run build
     - cp -r dist/* public_html/
   tasks:
-    - export DEPLOYPATH=/home/your-username/public_html/
+    - export DEPLOYPATH=/home/nileoeuf/public_html/
     - /bin/cp -R .vscode $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
