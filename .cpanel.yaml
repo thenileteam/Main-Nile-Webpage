@@ -1,0 +1,7 @@
+deployment:
+  method: node
+  node_version: "14"
+  commands:
+    - npm install           # Install dependencies
+    - npm run build         # Run Vite build (default: vite build)
+    - cp -r dist/* public_html/
