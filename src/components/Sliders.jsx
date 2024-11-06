@@ -12,7 +12,6 @@ const Sliders = () => {
         className="py-8 lg:py-16
     "
       >
-        {/* <div className=" "> */}
         <h2 className="section-headers text-center max-w-[731px] mx-auto">
           Success Stories From African Entrepreneurs
         </h2>
@@ -37,7 +36,6 @@ const Sliders = () => {
             ))}
           </Slider>
         </div>
-        {/* </div> */}
       </section>
     </ScrollRevealComponent>
   );

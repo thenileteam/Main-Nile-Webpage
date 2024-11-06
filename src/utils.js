@@ -1,7 +1,3 @@
-import home from "./assets/home.svg";
-import aboutIcon from "./assets/briefcase-arrow-left-right.svg";
-import featuresIcon from "./assets/palette-swatch.svg";
-import phoneIcon from "./assets/card-account-phone.svg";
 import payment from "./assets/payment-icon.svg";
 import storeIcon from "./assets/setup-icon.svg";
 import scalability from "./assets/Scalability-icon.svg";
@@ -14,7 +10,12 @@ import journey1 from "./assets/journey-1.svg";
 import journey2 from "./assets/journey-2.svg";
 import journey3 from "./assets/journey-3.svg";
 import journey4 from "./assets/journey-4.svg";
-import imageItem1 from "./assets/image-item1.svg";
+import founderImg from "./assets/image-item1.svg";
+
+// import home from "./assets/home.svg";
+// import aboutIcon from "./assets/briefcase-arrow-left-right.svg";
+// import featuresIcon from "./assets/palette-swatch.svg";
+// import phoneIcon from "./assets/card-account-phone.svg";
 
 import payStack from "./assets/paystack.svg";
 import analytics from "./assets/analytics.svg";
@@ -23,10 +24,9 @@ import inventory from "./assets/inventory.svg";
 
 import emailArrow from "./assets/email-arrow-left.svg";
 import phone from "./assets/phone-forward.svg";
-import aliImg from "./assets/Ali.jpeg";
-import rachaelImg from "./assets/rachel.jpg";
+import danielImg from "./assets/daniel.png";
+import balogunImg from "./assets/balogun.png";
 
-// icon: home icon: aboutIcon icon: featuresIcon  icon: phoneIcon
 export const navLinkItems = [
   { id: 0, text: "Home", url: "/" },
   { id: 1, text: "About us", url: "/AboutUs" },
@@ -145,9 +145,9 @@ export const journey = [
 ];
 
 export const teams = [
-  { id: 0, name: "Winner Oyebanjo", position: "CEO", img: imageItem1 },
-  { id: 2, name: "Agu Rachael", position: "Product Officer", img: rachaelImg },
-  { id: 3, name: "Ali Mohammed", position: "Frontend Developer", img: aliImg },
+  { id: 0, name: "Winner Oyebanjo", position: "CEO", img: founderImg },
+  { id: 1, name: "Daniel Owodunni", position: "Co-founder", img: danielImg },
+  { id: 2, name: "Abdulkadir Balogun", position: "COO", img: balogunImg },
 ];
 
 export const featuresSpecs = [
