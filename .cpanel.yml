@@ -1,0 +1,18 @@
+ YML
+---
+deployment:
+method: node
+  node_version: "14"
+  commands:
+    - npm install
+    - npm run build
+    - cp -r dist/* public_html/
+  tasks:
+    - export DEPLOYPATH=/home/nileoeuf/public_html/
+    - /bin/cp -R .vscode $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R fonts $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    /bin/cp index.html $DEPLOYPATH

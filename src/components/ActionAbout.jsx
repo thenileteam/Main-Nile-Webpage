@@ -3,8 +3,8 @@ import {ScrollRevealComponent } from "../components";
 const ActionAbout = ({ title, paragraph, btnText }) => {
   return (
     <ScrollRevealComponent>
-      <section className="px-6">
-        <div className="wrapper px-4 py-8 lg:py-16 lg:px-[100px] bg-myCustomColor-lighterGreen rounded-3xl shadow-md  shadow-myCustomColor-light">
+      <section className="section-spacing bg-myCustomColor-lighterGreen rounded-3xl shadow-md  shadow-myCustomColor-light w-11/12 md:w-4/5 md:max-w-[1184px]  mx-auto">
+        <div className="wrapper">
           <div className="text-center mx-auto">
             <h2 className="section-headers"> {title}</h2>
             <p className="py-1 md:py-2 md:text-[24px]">{paragraph}</p>

@@ -48,19 +48,14 @@ const Navbar = () => {
             <div className="py-7 lg:p-0 lg:flex">
               <ul className="lg:flex-container lg:gap-x-4 xl:gap-x-16">
                 {navLinkItems.map((item) => {
-                  const { id, url, text, icon } = item;
+                  const { id, url, text } = item;
                   const isActive = currentElement === id;
                   return (
                     <div
                       key={id}
-                      className="relative rounded-lg mt-7 lg:m-0 p-3 lg:p-0 border-2 lg:border-0 flex items-center gap-3 border-myCustomColor-light"
+                      className="relative rounded-lg mt-7 lg:m-0 p-3 lg:p-0 border-2 lg:border-0 flex items-center border-myCustomColor-light"
                     >
-                      <img
-                        src={icon}
-                        alt={text}
-                        loading="lazy"
-                        className="w-8 lg:hidden"
-                      />
+                      
                       <li
                         className={
                           isActive
@@ -82,8 +77,8 @@ const Navbar = () => {
             type="button"
             className="hidden p-2 rounded-full bg-primary text-pry1 font-bold transitions hover:bg-slate-950 btn-join-waitList lg:block lg:w-40 lg:h-12"
           >
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              Login/SignUp
+            <a href="https://forms.gle/d3z9vrrX8RiGg2gh9" target="_blank" rel="noopener noreferrer">
+              Join Waitlist
             </a>
           </button>
 
@@ -113,7 +108,6 @@ const Navbar = () => {
                     className="flex items-center gap-3 p-2 border-2 rounded-lg border-myCustomColor-light"
                     onClick={() => dispatch(closeNavbar())}
                   >
-                    <img src={icon} alt={text} loading="lazy" className="w-8" />
                     <a href={url} className="font-semibold text-primary">
                       {text}
                     </a>

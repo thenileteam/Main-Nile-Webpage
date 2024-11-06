@@ -12,15 +12,14 @@ const Sliders = () => {
         className="py-8 lg:py-16
     "
       >
-        {/* <div className=" "> */}
         <h2 className="section-headers text-center max-w-[731px] mx-auto">
           Success Stories From African Entrepreneurs
         </h2>
-        <div className="mt-14 testimonials">
+        <div className="mt-14 testimonials overflow-x-hidden py-4">
           <Slider {...sliderSettings}>
             {testimonies.map((item, index) => (
               <div
-                className="bg-myCustomColor-lighterGreen rounded-md p-4 shadow-sm shadow-myCustomColor-light "
+                className="bg-myCustomColor-lighterGreen rounded-md p-4 shadow-sm shadow-myCustomColor-light h-full"
                 key={item.id}
               >
                 <div className="flex gap-2 items-center">
@@ -37,7 +36,6 @@ const Sliders = () => {
             ))}
           </Slider>
         </div>
-        {/* </div> */}
       </section>
     </ScrollRevealComponent>
   );

@@ -12,12 +12,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  overflow-x: hidden!important;
   font-family: "Agrandir", sans-serif;
-  overflow-x: hidden;
 }
-.border-inspecting {
+/* .border-inspecting {
   border: 2px solid red;
-}
+} */
  
 @font-face {
   font-family: "Agrandir GrandHeavy";
@@ -53,14 +53,14 @@ h4,h2, li,h5, button{
   font-family:"Agrandir TextBold", sans-serif !important;
 
 }
-.testimonials .slick-slide{
-  margin-right: 28px !important;
-  height: inherit !important;
-  
+.testimonials .slick-slide, #features .slick-slide{
+  margin-right: 28px;
 }
+ 
  .hero >strong{
   font-weight: 700;
 }
+ 
 @layer components {
   .footer-headings {
     @apply text-primary font-bold;
@@ -81,7 +81,7 @@ h4,h2, li,h5, button{
     @apply px-6 py-8 lg:py-16;
   }
    .wrapper{
-    @apply md:w-4/5 md:max-w-[1,184px] mx-auto
+    @apply md:w-4/5 md:max-w-[1184px] mx-auto
    }
   .flex-container {
     @apply lg:flex justify-between;
@@ -102,5 +102,4 @@ h4,h2, li,h5, button{
     @apply bg-pry1 outline-none rounded-sm focus:outline focus:outline-1 focus:outline-pry3
     p-3 w-full shadow-md shadow-myCustomColor-lighterGreen;
   }
- 
 }

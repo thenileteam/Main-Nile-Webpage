@@ -3,8 +3,7 @@ import { journey } from "../utils";
 const AboutJourney = () => {
   return (
     <ScrollRevealComponent>
-      <section className="relative section-spacing bg-myCustomColor-lighterGreen rounded-b-3xl">
-        <div className="overlay absolute z-10 left-0 right-0 -top-3 rounded-t-3xl bg-myCustomColor-lighterGreen w-full h-4"></div>
+      <section className="relative section-spacing bg-myCustomColor-lighterGreen -mt-4  rounded-t-2xl rounded-b-2xl">
         <div className="wrapper">
           <SectionHeaders
             head="Our Journey"
@@ -17,7 +16,7 @@ const AboutJourney = () => {
                 return (
                   <article
                     className={`
-                      p-3 ${color} rounded-md flex flex-col shadow-md shadow-myCustomColor-light w-5/6 md:w-full mx-auto`}
+                      p-3 ${color} rounded-md flex flex-col shadow-md shadow-myCustomColor-light w-60 md:w-full mx-auto`}
                     key={id}
                   >
                     <div
@@ -40,7 +39,7 @@ const AboutJourney = () => {
               } else {
                 return (
                   <article
-                    className={`p-3 ${color} w-5/6 rounded-md text-pry1 md:w-full mx-auto shadow-md shadow-myCustomColor-light`}
+                    className={`p-3 ${color} w-60 rounded-md text-pry1 md:w-full mx-auto shadow-md shadow-myCustomColor-light`}
                     key={id}
                   >
                     <div>
