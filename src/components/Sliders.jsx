@@ -20,7 +20,7 @@ const Sliders = () => {
           <Slider {...sliderSettings}>
             {testimonies.map((item, index) => (
               <div
-                className="bg-myCustomColor-lighterGreen rounded-md p-4 shadow-sm shadow-myCustomColor-light h-full border border-green-950"
+                className="bg-myCustomColor-lighterGreen rounded-md p-4 shadow-sm shadow-myCustomColor-light h-full"
                 key={item.id}
               >
                 <div className="flex gap-2 items-center">
