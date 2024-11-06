@@ -16,11 +16,11 @@ const Sliders = () => {
         <h2 className="section-headers text-center max-w-[731px] mx-auto">
           Success Stories From African Entrepreneurs
         </h2>
-        <div className="mt-14 testimonials overflow-x-hidden">
+        <div className="mt-14 testimonials overflow-x-hidden py-4">
           <Slider {...sliderSettings}>
             {testimonies.map((item, index) => (
               <div
-                className="bg-myCustomColor-lighterGreen rounded-md p-4 shadow-sm shadow-myCustomColor-light h-full"
+                className="bg-myCustomColor-lighterGreen rounded-md p-4 shadow-sm shadow-myCustomColor-light h-full border border-green-950"
                 key={item.id}
               >
                 <div className="flex gap-2 items-center">

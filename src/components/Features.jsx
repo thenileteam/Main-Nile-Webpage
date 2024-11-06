@@ -22,7 +22,7 @@ const Features = () => {
   };
   return (
     <ScrollRevealComponent>
-      <section className="section-spacing relative rounded-b-2xl -mt-4 rounded-t-2xl bg-myCustomColor-lighterGreen">
+      <section className=" py-8 lg:py-16 relative rounded-b-2xl -mt-4 rounded-t-2xl bg-myCustomColor-lighterGreen">
         <div id="features" className="wrapper">
           <SectionHeaders
             head="Why Nile?"
@@ -30,13 +30,13 @@ const Features = () => {
         all the tools needed to manage operations"
           />
           {windowWidth < 768 ? (
-            <div className="overflow-x-hidden">
+            <div className="overflow-x-hidden ">
               <Slider {...newSliderSettings}>
                 {features.map((item) => {
                   const { id, img, heading, text } = item;
                   return (
                     <article
-                      className="bg-pry2 p-4 md:w-auto mx-auto lg:mx-0 rounded-lg border border-myCustomColor-light"
+                      className="bg-pry2 p-4 md:w-auto mx-auto lg:mx-0 rounded-lg border border-myCustomColor-light h-[180px] md:h-auto"
                       key={id}
                     >
                       <img

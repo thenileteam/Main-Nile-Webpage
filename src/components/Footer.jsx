@@ -33,35 +33,41 @@ const Footer = () => {
               </form>
             </div>
             <article className="flex-container gap-x-32 text-center lg:text-left">
-              {footerLinks.map((item) => {
+              {footerLinks.map(({ id, links, heading }) => {
                 return (
-                  <ul className="mb-10" key={item.id}>
-                    <h4 className="footer-headings mb-4">{item.heading}</h4>
-                    <li className="mb-2 hover:underline active:opacity-40 transitions">
-                      <Link to="/" className="text-pry2">
-                        {item.list1}
-                      </Link>
-                    </li>
-                    <li className="mb-2 hover:underline active:opacity-40 transitions">
-                      <Link to="/AboutUs" className="text-pry2">
-                        {item.list2}
-                      </Link>
-                    </li>
-                    <li className="mb-2 hover:underline active:opacity-40 transitions">
-                      <Link to="/FeaturesPage" className="text-pry2">
-                        {item.list3}
-                      </Link>
-                    </li>
-                    <li className="mb-2 hover:underline active:opacity-40 transitions">
-                      <Link to="/ContactPage" className="text-pry2">
-                        {item.list4}
-                      </Link>
-                    </li>
-                    <li className="mb-2 hover:underline active:opacity-40 transitions">
-                      <a href="#" className="text-pry2">
-                        {item?.list5}
-                      </a>
-                    </li>
+                  <ul className="mb-10" key={id}>
+                    <h4 className="footer-headings mb-4">{heading}</h4>
+                    {links.map((link) => {
+                      return (
+                        <>
+                          <li className="mb-2 hover:underline active:opacity-40 transitions">
+                            <Link to={link.url} className="text-pry2">
+                              {link.list1}
+                            </Link>
+                          </li>
+                          <li className="mb-2 hover:underline active:opacity-40 transitions">
+                            <Link to={link.url} className="text-pry2">
+                              {link.list2}
+                            </Link>
+                          </li>
+                          <li className="mb-2 hover:underline active:opacity-40 transitions">
+                            <Link to={link.url} className="text-pry2">
+                              {link.list3}
+                            </Link>
+                          </li>
+                          <li className="mb-2 hover:underline active:opacity-40 transitions">
+                            <Link to={link.url} className="text-pry2">
+                              {link.list4}
+                            </Link>
+                          </li>
+                          <li className="mb-2 hover:underline active:opacity-40 transitions">
+                            <a href={link.url} className="text-pry2">
+                              {link?.list5}
+                            </a>
+                          </li>
+                        </>
+                      );
+                    })}
                   </ul>
                 );
               })}
