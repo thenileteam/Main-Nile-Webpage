@@ -1,6 +1,26 @@
 import { Footer, ContactWays, AllSliderComponent } from "../components";
 import { contacts } from "../utils";
+import { setFormMessage } from "../features/formSlicer/formSlice";
+import { useSelector, useDispatch } from "react-redux";
 const ContactPage = () => {
+  const { formErrorMessage } = useSelector((store) => store.form);
+  const dispatch = useDispatch();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(e.target);
+    const formData = new FormData(e.target);
+    const name = formData.get("name");
+    console.log(name);
+
+    const email = formData.get("email");
+    const subject = formData.get("subject");
+    const message = formData.get("message");
+    if (!name || !email || !subject || !message) {
+      dispatch(setFormMessage(true));
+    } else {
+      dispatch(setFormMessage(false));
+    }
+  };
   return (
     <>
       <section className="section-spacing bg-pry2">
@@ -11,7 +31,7 @@ const ContactPage = () => {
           <strong className="block lg:text-[20px] py-3 text-pry3 text-center">
             We’re here to Assist With Any Questions, Partnerships Or Support.
           </strong>
-          <form action="">
+          <form onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name" className="labels">
                 Your Name
@@ -20,9 +40,8 @@ const ContactPage = () => {
                 type="text"
                 name="name"
                 id="name"
-                className="inputs"
+                className={formErrorMessage?'inputs outline-1 outline-red-600':"inputs"}
                 placeholder="Enter Your Name"
-                required
               />
             </div>
             <div>
@@ -33,9 +52,8 @@ const ContactPage = () => {
                 type="email"
                 name="email"
                 id="email"
-                className="inputs"
+                className={formErrorMessage?'inputs outline-1 outline-red-600':"inputs"}
                 placeholder="Enter Your Email"
-                required
               />
             </div>
             <div>
@@ -46,9 +64,8 @@ const ContactPage = () => {
                 type="text"
                 name="subject"
                 id="subject"
-                className="inputs"
+                className={formErrorMessage?'inputs outline-1 outline-red-600':"inputs"}
                 placeholder="Enter Your Subject"
-                required
               />
             </div>
             <div>
@@ -59,13 +76,17 @@ const ContactPage = () => {
                 type="text"
                 name="message"
                 id="message"
-                className="inputs"
+                className={formErrorMessage?'inputs outline-1 outline-red-600':"inputs"}
                 placeholder="Enter Your Message"
-                required
               />
             </div>
+            {formErrorMessage && (
+              <p className="text-red-600 font-semibold py-2">
+                Input fields cannot be empty!
+              </p>
+            )}
             <button
-              type="button"
+              type="submit"
               className="mx-auto mt-14 block bg-slate-950 rounded-full font-semibold text-pry1 py-1 w-44 h-12 hover:bg-primary active:bg-primary transitions"
             >
               {" "}
@@ -84,7 +105,7 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
-      <AllSliderComponent/>
+      <AllSliderComponent />
       <Footer />
     </>
   );

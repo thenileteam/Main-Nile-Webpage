@@ -4,7 +4,7 @@ const ContactWays = ({ icon, contact, name }) => {
   return (
     <a
     href="#"
-    className="bg-myCustomColor-lighterGreen border w-full border-myCustomColor-light rounded-md p-6 lg:w-2/5 mx-auto lg:mx-0"
+    className="bg-myCustomColor-lighterGreen hover:bg-myCustomColor-light transitions border w-full border-myCustomColor-light rounded-md p-6 lg:w-2/5 mx-auto lg:mx-0"
     >
         <ScrollRevealComponent>
         <div>

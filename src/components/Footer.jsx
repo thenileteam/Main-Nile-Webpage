@@ -39,7 +39,7 @@ const Footer = () => {
                     <h4 className="footer-headings mb-4">{heading}</h4>
                     {links.map((link) => {
                       return (
-                        <>
+                        <div key={link.id}>
                           <li className="mb-2 hover:underline active:opacity-40 transitions">
                             <Link to={link.url} className="text-pry2">
                               {link.list1}
@@ -65,7 +65,7 @@ const Footer = () => {
                               {link?.list5}
                             </a>
                           </li>
-                        </>
+                        </div>
                       );
                     })}
                   </ul>

@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 
 const AllSliderComponent = () => {
   const { slides,settings } = useSelector((store) => store.allSlider);
-  console.log(slides);
 
   return (
     <section className="my-8 md:my-16 ">
