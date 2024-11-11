@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style: none;
+  list-style:none;
 }
 html {
   scroll-behavior: smooth;
@@ -15,9 +15,9 @@ body {
   overflow-x: hidden!important;
   font-family: "Agrandir", sans-serif;
 }
-/* .border-inspecting {
-  border: 2px solid red;
-} */
+.border-inspecting {
+  border: 1px solid red;
+}
  
 @font-face {
   font-family: "Agrandir GrandHeavy";
