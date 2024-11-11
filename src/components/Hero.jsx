@@ -9,8 +9,8 @@ const Hero = () => {
         And Costs On Track.</h1>
         <p className='hero-subheading'>Manage sales, inventory, and cash to always be ready to meet demand with a real-time business management platform.</p>
         <div className='pt-2 w-[153px] md:w-[400px] mx-auto flex flex-col md:flex-row justify-between'>
-            {/* <button type="button" className='action-buttons bg-pry1 text-primary transitions hover:border-2 hover:text-pry1 hover:bg-transparent'>
-              <Link to='https://forms.gle/d3z9vrrX8RiGg2gh9'>Get Started</Link>  &#8594;</button> */}
+            <button type="button" className='action-buttons bg-pry1 text-primary transitions hover:border-2 hover:text-pry1 hover:bg-transparent'>
+              <Link to='https://app.nile.ng/' target="_blank" rel="noopener noreferrer">Get Started</Link>  &#8594;</button>
             <button type="button" className='action-buttons hidden md:block border-2 transitions hover:bg-pry1 hover:text-primary hover:border-0'>
               <Link to='/FeaturesPage'>Learn More</Link>{' '}
               &#8594;</button>
