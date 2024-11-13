@@ -1,4 +1,5 @@
-import {ScrollRevealComponent } from "../components";
+import { ScrollRevealComponent } from "../components";
+import {Link } from 'react-router-dom'
 
 const ActionAbout = ({ title, paragraph, btnText }) => {
   return (
@@ -12,9 +13,10 @@ const ActionAbout = ({ title, paragraph, btnText }) => {
               type="button"
               className="action-buttons mt-6 md:mt-9 bg-slate-950 hover:bg-primary active:bg-primary transitions"
             >
-              {" "}
-              {btnText} &#8594;
+              <Link to='https://app.nile.ng/'> {btnText} &#8594;</Link>
+              
             </button>
+             
           </div>
         </div>
       </section>

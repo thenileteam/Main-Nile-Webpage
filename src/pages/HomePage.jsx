@@ -6,6 +6,7 @@ const HomePage = () => {
       <Features />
       <Sliders/>
       <Action />
+      {/* <ActionAbout title=' Ready To Start Your E-commerce Journey?' btnText=' Get Started' /> */}
       <AllSliderComponent/>
       <Footer />
     </>

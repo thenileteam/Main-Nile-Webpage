@@ -10,12 +10,12 @@ const Action = () => {
               Ready To Start Your E-commerce Journey?
             </h2>
             <div className="md:max-w-[433px] mx-auto flex flex-col md:flex-row gap-4 md:gap-8 mt-6 md:mt-12  ">
-              {/* <button
+              <button
                 type="button"
                 className="action-buttons bg-slate-950 hover:bg-primary active:bg-primary transitions"
               >
                 Get Started
-              </button> */}
+              </button>
               <button
                 type="button"
                 className="action-buttons bg-myCustomColor-light transitions hover:bg-primary"
