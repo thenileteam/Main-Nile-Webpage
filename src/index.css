@@ -15,9 +15,9 @@ body {
   overflow-x: hidden!important;
   font-family: "Agrandir", sans-serif;
 }
-/* .border-inspecting {
+ .border-inspecting {
   border: 1px solid red;
-} */ 
+} 
  
 @font-face {
   font-family: "Agrandir GrandHeavy";
